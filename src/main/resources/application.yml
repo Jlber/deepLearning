@@ -1,0 +1,26 @@
+
+server:
+  port: 6161
+  
+spring:
+    servlet:
+      multipart:
+        max-file-size: 500
+        max-request-size: 5000
+    datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://47.94.168.117:3306/deeplearn?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: Yanlei2018
+      initialSize: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM DUAL
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      filters: stat,wall,log4j
+      idleTimeout: 60000
+      maxLifetime: 0
+      maximumPoolSize: 15
+      minimumIdle: 5
+      timeout: 100m

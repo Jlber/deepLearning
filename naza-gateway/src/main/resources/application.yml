@@ -1,0 +1,37 @@
+
+server:
+  port: 19999
+#spring:
+##  datasource:
+##    driver-class-name: com.mysql.jdbc.Driver
+##    url: jdbc:mysql://47.94.168.117:3306/deeplearn?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+##    username: root
+##    password: Yanlei2018
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    gateway:
+      routes:
+      - id: naza-produce
+        uri: lb://naza-produce1
+        predicates:
+        - Path=/spring/**
+        - Query=foo
+        filters:
+#        - PrefixPath=/foo
+        - StripPrefix=1
+        - name: Hystrix           #断路器降级策略
+          args:
+            name: default
+            retries: 3
+            fallbackUri: 'forward:/fallback' # 降级接口的地址
+
+# 注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://naza-eureka:18761/eureka/

@@ -1,13 +1,6 @@
 
 server:
   port: 19999
-#spring:
-##  datasource:
-##    driver-class-name: com.mysql.jdbc.Driver
-##    url: jdbc:mysql://47.94.168.117:3306/deeplearn?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-##    username: root
-##    password: Yanlei2018
-
 spring:
   application:
     name: @artifactId@

@@ -9,9 +9,9 @@ spring:
         max-request-size: 5000
     datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://47.94.168.117:3306/deeplearn?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      url: jdbc:mysql://localhost:3306/deeplearn?useUnicode=true&characterEncoding=UTF-8&useSSL=false
       username: root
-      password: Yanlei2018
+      password: 123456
       initialSize: 1
       timeBetweenEvictionRunsMillis: 60000
       minEvictableIdleTimeMillis: 300000

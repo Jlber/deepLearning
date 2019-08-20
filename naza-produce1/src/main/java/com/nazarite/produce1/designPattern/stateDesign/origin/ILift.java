@@ -1,4 +1,4 @@
-package com.nazatite.springcloudgateway.designPattern.stateDesign.origin;
+package com.nazarite.produce1.designPattern.stateDesign.origin;
 
 /**
  * @Author:elbert

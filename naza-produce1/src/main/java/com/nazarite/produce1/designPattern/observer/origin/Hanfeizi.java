@@ -1,4 +1,4 @@
-package com.nazarite.produce1.designPattern.observer;
+package com.nazarite.produce1.designPattern.observer.origin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
  * @Date:2019-08-25
  */
 
-public class Hanfeizi implements IHanfeizi,Observable {
+public class Hanfeizi implements IHanfeizi, Observable {
     private List<Observer> list=new ArrayList<>();
     @Override
     public void haveLunch() {

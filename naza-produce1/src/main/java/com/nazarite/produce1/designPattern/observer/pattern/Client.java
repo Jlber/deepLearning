@@ -1,4 +1,7 @@
-package com.nazarite.produce1.designPattern.observer;
+package com.nazarite.produce1.designPattern.observer.pattern;
+
+
+import java.util.Observer;
 
 /**
  * @Author:elbert
@@ -10,6 +13,8 @@ package com.nazarite.produce1.designPattern.observer;
  * 也叫发布订阅 模式    ===>消息队列原型
  *
  * 定义了一种一对多的关系，   每当一个对象改变(被观察者)，其聚合或者依赖他的对象都会得到通知并自动更新
+ *
+ * 使用了JDK里的观察者类
  */
 
 public class Client {

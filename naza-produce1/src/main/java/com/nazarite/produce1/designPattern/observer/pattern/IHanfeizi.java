@@ -1,4 +1,4 @@
-package com.nazarite.produce1.designPattern.observer;
+package com.nazarite.produce1.designPattern.observer.pattern;
 
 /**
  * @Author:elbert

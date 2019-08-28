@@ -9,7 +9,7 @@ package com.nazarite.produce1.designPattern.decorator;
  *   不用改原来的代码 就能对类的方法进行增强
  *
  * 是一种特殊的代理模式
- * L
+ *
  */
 
 public class Father {

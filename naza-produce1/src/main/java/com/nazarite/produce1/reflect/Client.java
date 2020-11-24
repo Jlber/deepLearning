@@ -1,7 +1,6 @@
 package com.nazarite.produce1.reflect;
 
 import org.apache.ibatis.reflection.TypeParameterResolver;
-import sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
